@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dataset-card {
+  background: #fff;
+  border-radius: 10px;
+  border: 1.5px solid #3a6ea5;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.10);
+  padding: 24px 28px 18px 28px;
+  margin: 16px 0;
+  transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 210px;
+  max-width: 100%;
+}
+.dataset-card:hover {
+  box-shadow: 0 8px 24px rgba(44,62,80,0.18);
+  border-color: #1d4e89;
+  background: #eaf1fb;
+}
+.dataset-card-box h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.dataset-card-box .dataset-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.dataset-card-box .delete-btn {
+  margin-left: 8px;
+  color: #e74c3c;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.98em;
+  transition: color 0.15s;
+  display: inline-block;
+}
+.dataset-card-box .delete-btn:hover {
+  color: #b71c1c;
+  text-decoration: underline;
+}
+
+.dataset-row-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.dataset-row-flex > .col-md-3,
+.dataset-row-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+body, .App, .main-content, .container-fluid {
+  background: #f9fafb !important;
+}
+
+.sort-native-dropdown-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f3f4f4;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  padding: 7px 18px 7px 14px;
+  font-size: 1.08rem;
+  font-weight: 500;
+}
+.sort-native-dropdown-label {
+  margin-right: 4px;
+  color: #222;
+}
+.sort-native-dropdown {
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  font-size: 1.08rem;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 4px 18px 4px 8px;
+  background: #fff;
+  border: 1px solid #ccc;
+  transition: border 0.2s;
+}
+.sort-native-dropdown:focus {
+  border: 1.5px solid #3a6ea5;
+}
